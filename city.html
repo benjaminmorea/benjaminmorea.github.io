@@ -3,9 +3,10 @@
 <HEAD>
 <SCRIPT LANGUAGE="javascript">
 function controle(form1) {
-var rep = document.form1.input.value;
-	if(rep === "bleu" || rep === "Bleu" || rep === "BLEU"){
-		alert("Bien joué !")
+var longitude = document.form1.longitude.value;
+var latitude = document.form1.latitude.value;
+	if(latitude === "37.39" && longitude === "-5.99"){
+		alert("Bien joué ! Lorsque l'on me gonfle trop j'explose.")
 	} else {
 		alert("Votre réponse n'est pas bonne, réessayez !");
 	}
@@ -14,8 +15,14 @@ var rep = document.form1.input.value;
 </HEAD>
 <BODY>
 <FORM onSubmit="Javascript:controle(form1)" NAME="form1">
-De quelle couleur est ..?
-<INPUT TYPE="text" NAME="input" VALUE=""><BR>
+Quels sont les coordonnées géographique de la ville dans lequel le vaccin de 2023 a été créé ?
+<BR>
+Arrondir les coordonnées au centième supérieur.
+<BR>
+Longitude 
+<INPUT TYPE="text" NAME="longitude" VALUE=""><BR>
+Latitude  
+<INPUT TYPE="text" NAME="latitude" VALUE=""><BR>
 <INPUT TYPE="button" NAME="bouton" VALUE="Contrôler" onClick="controle(form1)">
 </FORM>
 </BODY>
