@@ -5,7 +5,7 @@
 function controle(form1) {
 var rep = document.form1.input.value;
 	if(rep === "bleu" || rep === "Bleu" || rep === "BLEU"){
-		alert("Bien joué !")
+		alert("Bien joué ! Tout le monde est d'accord pour dire que je suis quelqu'un de froid.")
 	} else {
 		alert("Votre réponse n'est pas bonne, réessayez !");
 	}
@@ -14,7 +14,10 @@ var rep = document.form1.input.value;
 </HEAD>
 <BODY>
 <FORM onSubmit="Javascript:controle(form1)" NAME="form1">
-De quelle couleur est ..?
+Indication : 
+<BR>
+Rajouter dans le verre sur l'évier une goute de Dichlorodiphényltrichloroéthane.
+De quelle couleur est le cheval blanc de Enrique ?
 <INPUT TYPE="text" NAME="input" VALUE=""><BR>
 <INPUT TYPE="button" NAME="bouton" VALUE="Contrôler" onClick="controle(form1)">
 </FORM>
