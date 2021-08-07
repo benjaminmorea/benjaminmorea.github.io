@@ -5,7 +5,7 @@
 function controle(form1) {
 var longitude = document.form1.longitude.value;
 var latitude = document.form1.latitude.value;
-	if(latitude === "37.39" && longitude === "-5.99"){
+	if((latitude === "37.39" || latitude === "37,39") && (longitude === "-5.99" || longitude === "-5,99")){
 		alert("Bien joué ! Lorsque l'on me gonfle trop j'explose.")
 	} else {
 		alert("Votre réponse n'est pas bonne, réessayez !");
